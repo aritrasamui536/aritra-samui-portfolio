@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aritra Samui — Software Engineer / AI-ML &amp; Full-Stack Developer</title>
+<meta name="description" content="Aritra Samui — final-year B.Tech CSE student, AI/ML intern, and full-stack developer. Portfolio with projects, skills, and contact info.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon-180.png">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Custom cursor stack indicator -->
+<div class="layer-scan" id="layerScan" aria-hidden="true"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">
+      <span class="nav-logo-mark">AS</span>
+      <span class="nav-logo-text">Aritra Samui</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#top" class="nav-link is-active" data-nav>Home</a>
+      <a href="#about" class="nav-link" data-nav>About</a>
+      <a href="#skills" class="nav-link" data-nav>Skills</a>
+      <a href="#projects" class="nav-link" data-nav>Projects</a>
+      <a href="#resume" class="nav-link" data-nav>Resume</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light / dark theme">
+        <svg class="theme-icon theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+        <svg class="theme-icon theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </button>
+      <a href="#contact" class="btn btn-gradient nav-contact">Contact</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-grid" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="eyebrow-dot"></span>open to Software Engineer, AI/ML &amp; Data Analyst roles</p>
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">Aritra Samui</h1>
+      <p class="hero-role">
+        <span class="hero-role-prefix">I am a</span>
+        <span class="hero-role-word" id="typewriterWord"></span><span class="hero-role-cursor" aria-hidden="true">|</span>
+      </p>
+      <p class="hero-sub">
+        Final-year B.Tech CSE student who works across the stack — responsive interfaces,
+        REST-driven backends, and machine learning models trained on real data.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">See the work</a>
+        <a href="#contact" class="btn btn-outline">Get in touch</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-count="3">0</span><span class="hero-stat-suffix">+</span>
+          <span class="hero-stat-label">projects shipped</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-count="5">0</span><span class="hero-stat-suffix">mo</span>
+          <span class="hero-stat-label">AI/ML internship</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-count="4">0</span><span class="hero-stat-suffix">/4</span>
+          <span class="hero-stat-label">layers, always covered</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signature element: literal cross-section of a "full stack" -->
+    <div class="stack-diagram" id="stackDiagram">
+      <div class="stack-layer" data-layer="ui" style="--i:0">
+        <div class="stack-layer-head">
+          <span class="stack-layer-tag">// 01</span>
+          <span class="stack-layer-name">Interface</span>
+        </div>
+        <div class="stack-layer-pills">
+          <span>React</span><span>HTML5</span><span>CSS3</span>
+        </div>
+      </div>
+      <div class="stack-layer" data-layer="api" style="--i:1">
+        <div class="stack-layer-head">
+          <span class="stack-layer-tag">// 02</span>
+          <span class="stack-layer-name">Logic &amp; ML</span>
+        </div>
+        <div class="stack-layer-pills">
+          <span>Python</span><span>Scikit-learn</span><span>PHP</span>
+        </div>
+      </div>
+      <div class="stack-layer" data-layer="db" style="--i:2">
+        <div class="stack-layer-head">
+          <span class="stack-layer-tag">// 03</span>
+          <span class="stack-layer-name">Data</span>
+        </div>
+        <div class="stack-layer-pills">
+          <span>MySQL</span><span>Pandas</span><span>NumPy</span>
+        </div>
+      </div>
+      <div class="stack-layer" data-layer="infra" style="--i:3">
+        <div class="stack-layer-head">
+          <span class="stack-layer-tag">// 04</span>
+          <span class="stack-layer-name">Tools</span>
+        </div>
+        <div class="stack-layer-pills">
+          <span>Git</span><span>GitHub</span><span>VS Code</span>
+        </div>
+      </div>
+      <div class="stack-current" id="stackCurrent">reading layer: interface</div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll to content">
+    <span>scroll</span>
+    <span class="scroll-cue-line"></span>
+  </a>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="section-inner">
+    <div class="section-head">
+      <span class="section-tag">// 00 — about</span>
+      <h2 class="section-title">Who's building this stack</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-portrait">
+        <div class="about-portrait-frame">
+          <img src="assets/images/aritra-photo.jpg" alt="Aritra Samui" class="about-avatar">
+          <div class="about-portrait-tag">AS — Durgapur</div>
+        </div>
+      </div>
+
+      <div class="about-copy">
+        <p class="about-lead">
+          I'm Aritra — a final-year Computer Science student who likes turning messy inputs,
+          whether that's a raw dataset or a vague feature request, into something reliable.
+        </p>
+        <p>
+          I'm currently completing my B.Tech in Computer Science &amp; Engineering at
+          Dr. B.C. Roy Engineering College, Durgapur, and recently wrapped up a five-month
+          AI/ML internship where I built and evaluated machine learning models end to end —
+          preprocessing, feature selection, training, and evaluation. Alongside that, I build
+          full-stack web apps with React, PHP, and MySQL.
+        </p>
+        <p>
+          I'm looking for an entry-level role as a Software Engineer, AI/ML Engineer, or Data
+          Analyst, where I can keep working across both the web and the model side of a product.
+        </p>
+
+        <div class="about-facts">
+          <div class="about-fact">
+            <span class="about-fact-label">based in</span>
+            <span class="about-fact-value">Jhargram, West Bengal</span>
+          </div>
+          <div class="about-fact">
+            <span class="about-fact-label">focus</span>
+            <span class="about-fact-value">Full-stack apps &amp; ML models</span>
+          </div>
+          <div class="about-fact">
+            <span class="about-fact-label">currently</span>
+            <span class="about-fact-value">open to opportunities</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section section-alt" id="skills">
+  <div class="section-inner">
+    <div class="section-head">
+      <span class="section-tag">// 01–04 — skills</span>
+      <h2 class="section-title">Every layer, covered</h2>
+    </div>
+
+    <div class="skills-stack">
+
+      <div class="skill-layer" data-reveal>
+        <div class="skill-layer-label">
+          <span class="skill-layer-index">01</span>
+          <span class="skill-layer-name">Interface</span>
+        </div>
+        <div class="skill-layer-items">
+          <span class="skill-chip">HTML5</span>
+          <span class="skill-chip">CSS3</span>
+          <span class="skill-chip">JavaScript</span>
+          <span class="skill-chip">React</span>
+          <span class="skill-chip">WordPress</span>
+        </div>
+      </div>
+
+      <div class="skill-layer" data-reveal>
+        <div class="skill-layer-label">
+          <span class="skill-layer-index">02</span>
+          <span class="skill-layer-name">Logic &amp; ML</span>
+        </div>
+        <div class="skill-layer-items">
+          <span class="skill-chip">Python</span>
+          <span class="skill-chip">C</span>
+          <span class="skill-chip">C++</span>
+          <span class="skill-chip">PHP</span>
+          <span class="skill-chip">Scikit-learn</span>
+          <span class="skill-chip">Feature Engineering</span>
+        </div>
+      </div>
+
+      <div class="skill-layer" data-reveal>
+        <div class="skill-layer-label">
+          <span class="skill-layer-index">03</span>
+          <span class="skill-layer-name">Data</span>
+        </div>
+        <div class="skill-layer-items">
+          <span class="skill-chip">MySQL</span>
+          <span class="skill-chip">SQL</span>
+          <span class="skill-chip">Pandas</span>
+          <span class="skill-chip">NumPy</span>
+        </div>
+      </div>
+
+      <div class="skill-layer" data-reveal>
+        <div class="skill-layer-label">
+          <span class="skill-layer-index">04</span>
+          <span class="skill-layer-name">Tools &amp; Core</span>
+        </div>
+        <div class="skill-layer-items">
+          <span class="skill-chip">Git &amp; GitHub</span>
+          <span class="skill-chip">VS Code</span>
+          <span class="skill-chip">Jupyter Notebook</span>
+          <span class="skill-chip">Data Structures</span>
+          <span class="skill-chip">Algorithms</span>
+          <span class="skill-chip">OOP</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="section-inner">
+    <div class="section-head">
+      <span class="section-tag">// 05 — projects</span>
+      <h2 class="section-title">Selected work</h2>
+    </div>
+
+    <!-- Featured project with real screenshot -->
+    <div class="featured-project" data-reveal>
+      <div class="featured-project-media">
+        <img src="assets/images/deployforge-screenshot.png" alt="DeployForge — Deployment Automation Framework dashboard screenshot" loading="lazy">
+      </div>
+      <div class="featured-project-copy">
+        <span class="project-layer-tag">full stack — featured</span>
+        <h3 class="project-title">Deployment Automation Framework</h3>
+        <p class="project-desc">
+          A dashboard for exploring, comparing, and running DevOps automation tooling —
+          from CI/CD to Infrastructure as Code and GitOps. Built with an integrated Git
+          workflow to cut down manual deployment effort.
+        </p>
+        <div class="project-stack">
+          <span>Dashboard UI</span><span>Git integration</span><span>Pipeline automation</span>
+        </div>
+        <a href="https://github.com/aritrasamui536/deployment-automation-framework" target="_blank" rel="noopener" class="featured-project-link">View on GitHub →</a>
+      </div>
+    </div>
+
+    <div class="filter-bar" id="filterBar" role="tablist" aria-label="Filter projects">
+      <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+      <button class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">Full Stack</button>
+      <button class="filter-btn" data-filter="frontend" role="tab" aria-selected="false">Frontend</button>
+      <button class="filter-btn" data-filter="ml" role="tab" aria-selected="false">Data / ML</button>
+    </div>
+
+    <div class="project-grid" id="projectGrid">
+
+      <article class="project-card" data-category="fullstack" data-url="https://github.com/aritrasamui536/deployment-automation-framework" tabindex="0" role="link" aria-label="Open Deployment Automation Framework on GitHub">
+        <div class="project-card-top">
+          <span class="project-layer-tag">full stack</span>
+          <div class="project-links">
+            <a href="https://github.com/aritrasamui536/deployment-automation-framework" target="_blank" rel="noopener" aria-label="Live demo of Deployment Automation Framework">Live</a>
+            <a href="https://github.com/aritrasamui536/deployment-automation-framework" target="_blank" rel="noopener" aria-label="Source code of Deployment Automation Framework">Code</a>
+          </div>
+        </div>
+        <h3 class="project-title">Deployment Automation Framework</h3>
+        <p class="project-desc">Automated deployment dashboard with integrated Git version control, cutting manual deployment effort.</p>
+        <div class="project-stack">
+          <span>Dashboard</span><span>Git</span><span>Automation</span>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="frontend" data-url="https://github.com/aritrasamui536/resume-craft" tabindex="0" role="link" aria-label="Open ResumeCraft on GitHub">
+        <div class="project-card-top">
+          <span class="project-layer-tag">frontend</span>
+          <div class="project-links">
+            <a href="https://github.com/aritrasamui536/resume-craft" target="_blank" rel="noopener" aria-label="Live demo of ResumeCraft">Live</a>
+            <a href="https://github.com/aritrasamui536/resume-craft" target="_blank" rel="noopener" aria-label="Source code of ResumeCraft">Code</a>
+          </div>
+        </div>
+        <h3 class="project-title">ResumeCraft — Resume Builder</h3>
+        <p class="project-desc">Responsive resume builder built with React, with customizable templates and one-click PDF export.</p>
+        <div class="project-stack">
+          <span>React</span><span>PDF export</span><span>Responsive UI</span>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="ml" data-url="https://github.com/aritrasamui536/laptop_price_prediction" tabindex="0" role="link" aria-label="Open Laptop Price Prediction on GitHub">
+        <div class="project-card-top">
+          <span class="project-layer-tag">data / ml</span>
+          <div class="project-links">
+            <a href="https://github.com/aritrasamui536/laptop_price_prediction" target="_blank" rel="noopener" aria-label="Notebook for Laptop Price Prediction">Notebook</a>
+            <a href="https://github.com/aritrasamui536/laptop_price_prediction" target="_blank" rel="noopener" aria-label="Source code of Laptop Price Prediction">Code</a>
+          </div>
+        </div>
+        <h3 class="project-title">Laptop Price Prediction</h3>
+        <p class="project-desc">ML models (Linear Regression, Decision Tree, Random Forest) with preprocessing, feature engineering, and Matplotlib visualizations.</p>
+        <div class="project-stack">
+          <span>Scikit-learn</span><span>Pandas</span><span>Matplotlib</span>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="project-empty" id="projectEmpty" hidden>No projects in this layer yet — check back soon.</p>
+  </div>
+</section>
+
+<!-- RESUME -->
+<section class="section section-alt" id="resume">
+  <div class="section-inner">
+    <div class="resume-panel">
+      <div class="resume-copy">
+        <span class="section-tag">// 06 — resume</span>
+        <h2 class="section-title">Read the full changelog</h2>
+        <p class="resume-sub">
+          Education, internship experience, and a full skills breakdown — in one PDF.
+        </p>
+      </div>
+      <a href="assets/Aritra_Samui_CV.pdf" download class="btn btn-primary resume-btn">
+        <span>Download résumé</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="resume-extra">
+      <div class="resume-extra-block" data-reveal>
+        <span class="section-tag">certifications</span>
+        <ul class="resume-list">
+          <li>Python for Data Analysis: NumPy &amp; Pandas — Coursera</li>
+          <li>Machine Learning for All — Coursera</li>
+        </ul>
+      </div>
+      <div class="resume-extra-block" data-reveal>
+        <span class="section-tag">education</span>
+        <ul class="resume-list">
+          <li><b>B.Tech, Computer Science &amp; Engineering</b> — Dr. B.C. Roy Engineering College, Durgapur, 2022–2026 (CGPA 6.17)</li>
+          <li><b>Higher Secondary (WBCHSE)</b> — Jhargram Banitirtha High School, 2022 · 74.4%</li>
+          <li><b>Secondary (WBBSE)</b> — Jhargram Kumud Kumari Institution, 2020 · 64.4%</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="section-inner">
+    <div class="section-head">
+      <span class="section-tag">// 07 — contact</span>
+      <h2 class="section-title">Let's build something</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p class="contact-lead">
+          Have a project, a role, or just a question about the stack above? My inbox is open.
+        </p>
+
+        <ul class="contact-list">
+          <li>
+            <span class="contact-list-label">email</span>
+            <a href="mailto:aritrasamui23@gmail.com">aritrasamui23@gmail.com</a>
+          </li>
+          <li>
+            <span class="contact-list-label">phone</span>
+            <a href="tel:+919883351536">+91 98833 51536</a>
+          </li>
+          <li>
+            <span class="contact-list-label">github</span>
+            <a href="https://github.com/aritrasamui536" target="_blank" rel="noopener">github.com/aritrasamui536</a>
+          </li>
+          <li>
+            <span class="contact-list-label">linkedin</span>
+            <a href="https://linkedin.com/in/aritra-samui-0aaaa9330" target="_blank" rel="noopener">linkedin.com/in/aritra-samui</a>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <input type="hidden" name="access_key" value="17dd617f-91a7-4529-8a66-ead2211d392e">
+        <input type="hidden" name="subject" value="New message from portfolio contact form">
+        <input type="checkbox" name="botcheck" class="hidden-honeypot" tabindex="-1" autocomplete="off">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="What are you building?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit" id="formSubmit">
+          <span class="form-submit-text">Send message</span>
+        </button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-center">
+    <a href="#top" class="footer-name">Aritra Samui</a>
+
+    <nav class="footer-links-row">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="footer-social-row">
+      <a href="https://github.com/aritrasamui536" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55 0-.27-.01-1-.02-1.96-3.17.69-3.84-1.53-3.84-1.53-.52-1.31-1.26-1.66-1.26-1.66-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.74 2.66 1.24 3.31.95.1-.73.4-1.24.72-1.53-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.16-3.06-.12-.29-.5-1.45.11-3.02 0 0 .95-.3 3.11 1.17a10.8 10.8 0 0 1 2.83-.38c.96 0 1.93.13 2.83.38 2.16-1.47 3.11-1.17 3.11-1.17.61 1.57.23 2.73.11 3.02.72.8 1.16 1.82 1.16 3.06 0 4.37-2.67 5.34-5.21 5.62.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .3.2.66.79.55A11.53 11.53 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5Z"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/aritra-samui-0aaaa9330" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+      </a>
+      <a href="mailto:aritrasamui23@gmail.com" aria-label="Email">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M3 6l9 7 9-7M3 6h18v12H3V6Z"/></svg>
+      </a>
+    </div>
+
+    <p class="footer-copyright">© <span id="year"></span> Aritra Samui. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
