@@ -1,4 +1,4 @@
-# Aritra Samui — Portfolio
+# Aritra Samui — Portfolio 
 
 A fully responsive developer portfolio for Aritra Samui — final-year B.Tech CSE student,
 AI/ML intern, and full-stack developer. The design presents the page as a "full stack":
