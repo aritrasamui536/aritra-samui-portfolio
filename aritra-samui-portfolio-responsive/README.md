@@ -19,8 +19,9 @@ the projects inside it are actually built.
 
 ## Project structure
 
+ 
 ```
-aritra-samui-portfolio/
+aritra-samui-portfolio-responsive/
 ├── index.html
 ├── assets/
 │   ├── css/
@@ -30,9 +31,8 @@ aritra-samui-portfolio/
 │   ├── images/
 │   │   ├── aritra-photo.jpg
 │   │   └── deployforge-screenshot.png
-│   └── Aritra_Samui_CV.pdf
-├── README.md
-└── .gitignore
+│   └── Aritra_cv.pdf
+└── README.md
 ```
 
 ## Getting started
@@ -41,9 +41,9 @@ No build step is required — it's plain HTML/CSS/JS.
 
 1. Clone the repo:
    ```bash
-   git clone <your-repo-url>
-   cd aritra-samui-portfolio
-   ```
+   git clone https://github.com/aritrasamui536/aritra-samui-portfolio.git
+   cd aritra-samui-portfolio/aritra-samui-portfolio-responsive
+```
 2. Open `index.html` directly in a browser, or serve it locally:
    ```bash
    npx serve .
