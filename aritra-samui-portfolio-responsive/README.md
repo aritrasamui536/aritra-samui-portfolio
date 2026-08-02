@@ -5,7 +5,7 @@ AI/ML intern, and full-stack developer. The design presents the page as a "full 
 every section is a labelled layer (Interface → Logic & ML → Data → Tools), mirroring how
 the projects inside it are actually built.
 
-**Live demo:** _add your deployed URL here_
+**Live demo:** [_add your deployed URL here_](https://aritra-samui-portfolio.vercel.app/)
 
 ## Features
 
