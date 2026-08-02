@@ -1,5 +1,5 @@
 /* =========================================================
-   Aryan Reddy — Portfolio interactions
+   Aritra Samui — Portfolio interactions
    ========================================================= */
 
 document.addEventListener('DOMContentLoaded', () => {
