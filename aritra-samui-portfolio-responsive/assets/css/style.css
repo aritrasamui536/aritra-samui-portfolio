@@ -214,18 +214,26 @@ ul{ list-style: none; }
 .nav-actions{ display: flex; align-items: center; gap: 14px; justify-self: end; }
 
 .theme-toggle{
+  position: relative;
   width: 36px; height: 36px;
   display: grid; place-items: center;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 50%;
   color: var(--text-muted);
-  transition: color .2s, border-color .2s;
+  overflow: hidden;
+  transition: color .2s, border-color .2s, transform .2s var(--ease);
 }
 .theme-toggle:hover{ color: var(--accent); border-color: var(--accent); }
-.theme-icon-sun{ display: none; }
-[data-theme="light"] .theme-icon-moon{ display: none; }
-[data-theme="light"] .theme-icon-sun{ display: block; }
+.theme-toggle:active{ transform: scale(.9); }
+.theme-icon{
+  position: absolute;
+  transition: opacity .35s var(--ease), transform .5s var(--ease);
+}
+.theme-icon-moon{ opacity: 1; transform: rotate(0deg) scale(1); }
+.theme-icon-sun{ opacity: 0; transform: rotate(-90deg) scale(.4); }
+[data-theme="light"] .theme-icon-moon{ opacity: 0; transform: rotate(90deg) scale(.4); }
+[data-theme="light"] .theme-icon-sun{ opacity: 1; transform: rotate(0deg) scale(1); }
 
 .btn-gradient{
   background: linear-gradient(120deg, var(--accent), var(--accent-warm));
@@ -246,6 +254,19 @@ ul{ list-style: none; }
 .nav-toggle.is-open span:nth-child(1){ transform: translateY(7px) rotate(45deg); }
 .nav-toggle.is-open span:nth-child(2){ opacity: 0; }
 .nav-toggle.is-open span:nth-child(3){ transform: translateY(-7px) rotate(-45deg); }
+
+.nav-backdrop{
+  position: fixed;
+  inset: 0;
+  top: 64px;
+  background: rgba(0,0,0,.45);
+  backdrop-filter: blur(2px);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 45;
+  transition: opacity .3s var(--ease);
+}
+.nav-backdrop.is-open{ opacity: 1; pointer-events: auto; }
 
 /* ================= HERO ================= */
 .hero{
@@ -888,7 +909,6 @@ ul{ list-style: none; }
     border-color: var(--border);
   }
 
- 
   .nav-contact{ display: none; }
   .nav-logo-text{ display: none; }
   .nav-actions{ gap: 16px; }
@@ -901,4 +921,3 @@ ul{ list-style: none; }
     border: 1px solid var(--border);
   }
 }
-
