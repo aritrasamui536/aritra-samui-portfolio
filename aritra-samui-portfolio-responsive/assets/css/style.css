@@ -888,7 +888,7 @@ ul{ list-style: none; }
     border-color: var(--border);
   }
 
-  .nav-logo{ display: none; }
+ 
   .nav-contact{ display: none; }
 
   .nav-actions{ gap: 16px; }
