@@ -39,20 +39,35 @@ function initNavScroll(){
 function initMobileNav(){
   const toggle = document.getElementById('navToggle');
   const links = document.getElementById('navLinks');
+  const backdrop = document.getElementById('navBackdrop');
   if (!toggle || !links) return;
 
-  toggle.addEventListener('click', () => {
-    const isOpen = links.classList.toggle('is-open');
+  const setOpen = (isOpen) => {
+    links.classList.toggle('is-open', isOpen);
     toggle.classList.toggle('is-open', isOpen);
     toggle.setAttribute('aria-expanded', String(isOpen));
+    if (backdrop) backdrop.classList.toggle('is-open', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  };
+
+  toggle.addEventListener('click', () => {
+    setOpen(!links.classList.contains('is-open'));
   });
 
   links.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => {
-      links.classList.remove('is-open');
-      toggle.classList.remove('is-open');
-      toggle.setAttribute('aria-expanded', 'false');
-    });
+    a.addEventListener('click', () => setOpen(false));
+  });
+
+  if (backdrop) {
+    backdrop.addEventListener('click', () => setOpen(false));
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && links.classList.contains('is-open')) setOpen(false);
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 760 && links.classList.contains('is-open')) setOpen(false);
   });
 }
 
