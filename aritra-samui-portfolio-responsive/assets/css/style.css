@@ -881,18 +881,16 @@ ul{ list-style: none; }
     border: 1px solid var(--border);
     border-radius: 40px;
     padding: 10px 14px;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: auto 1fr auto;
   }
   .nav.is-scrolled{
     background: rgba(16, 22, 29, .9);
     border-color: var(--border);
   }
 
- 
-  .nav-contact{ display: none; }
   .nav-logo-text{ display: none; }
-  .nav-actions{ gap: 16px; }
-
+  .nav-contact{ display: none; }
+   
   .nav-links{
     top: 80px;
     left: 12px;
@@ -900,4 +898,4 @@ ul{ list-style: none; }
     border-radius: 20px;
     border: 1px solid var(--border);
   }
-}
+
