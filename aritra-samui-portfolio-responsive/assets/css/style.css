@@ -890,7 +890,9 @@ ul{ list-style: none; }
 
   .nav-logo-text{ display: none; }
   .nav-contact{ display: none; }
-
+   
+  .nav-actions{ gap: 16px; }
+   
   .nav-links{
     top: 80px;
     left: 12px;
