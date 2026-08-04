@@ -919,5 +919,12 @@ ul{ list-style: none; }
     right: 12px;
     border-radius: 20px;
     border: 1px solid var(--border);
+     .nav{
+  transition: opacity .3s ease, transform .3s ease;
+}
+.nav.is-hidden{
+  opacity: 0;
+  transform: translateY(-12px);
+  pointer-events: none;
   }
 }
