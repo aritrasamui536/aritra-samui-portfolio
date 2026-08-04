@@ -892,9 +892,9 @@ ul{ list-style: none; }
 /* ----- floating pill nav (mobile) ----- */
 @media (max-width: 760px){
   .nav{
-    top: 12px;
-    left: 12px;
-    right: 12px;
+    transform: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
   }
   .nav-inner{
     background: rgba(16, 22, 29, .85);
