@@ -1,3 +1,4 @@
+HTML 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -263,7 +264,7 @@
       <h2 class="section-title">Selected work</h2>
     </div>
 
-    <!-- Featured project with real screenshot -->
+   <!-- Featured project with real screenshot -->
     <div class="featured-project" data-reveal>
       <div class="featured-project-media">
         <img src="assets/images/deployforge-screenshot.png" alt="DeployForge — Deployment Automation Framework dashboard screenshot" loading="lazy">
@@ -282,16 +283,16 @@
         <a href="https://github.com/aritrasamui536/deployment-automation-framework" target="_blank" rel="noopener" class="featured-project-link">View on GitHub →</a>
       </div>
     </div>
-
+ 
     <div class="filter-bar" id="filterBar" role="tablist" aria-label="Filter projects">
       <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">All</button>
       <button class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">Full Stack</button>
       <button class="filter-btn" data-filter="frontend" role="tab" aria-selected="false">Frontend</button>
       <button class="filter-btn" data-filter="ml" role="tab" aria-selected="false">Data / ML</button>
     </div>
-
+ 
     <div class="project-grid" id="projectGrid">
-
+ 
       <article class="project-card" data-category="fullstack" data-url="https://github.com/aritrasamui536/deployment-automation-framework" tabindex="0" role="link" aria-label="Open Deployment Automation Framework on GitHub">
         <div class="project-card-top">
           <span class="project-layer-tag">full stack</span>
@@ -306,7 +307,7 @@
           <span>Dashboard</span><span>Git</span><span>Automation</span>
         </div>
       </article>
-
+ 
       <article class="project-card" data-category="frontend" data-url="https://github.com/aritrasamui536/resume-craft" tabindex="0" role="link" aria-label="Open ResumeCraft on GitHub">
         <div class="project-card-top">
           <span class="project-layer-tag">frontend</span>
@@ -321,7 +322,7 @@
           <span>React</span><span>PDF export</span><span>Responsive UI</span>
         </div>
       </article>
-
+ 
       <article class="project-card" data-category="ml" data-url="https://github.com/aritrasamui536/laptop_price_prediction" tabindex="0" role="link" aria-label="Open Laptop Price Prediction on GitHub">
         <div class="project-card-top">
           <span class="project-layer-tag">data / ml</span>
@@ -336,9 +337,39 @@
           <span>Scikit-learn</span><span>Pandas</span><span>Matplotlib</span>
         </div>
       </article>
-
+ 
+      <article class="project-card" data-category="ml" data-url="https://github.com/aritrasamui536/sleep-apnea-detection" tabindex="0" role="link" aria-label="Open Sleep Apnea Detection on GitHub">
+        <div class="project-card-top">
+          <span class="project-layer-tag">data / ml</span>
+          <div class="project-links">
+            <a href="https://github.com/aritrasamui536/sleep-apnea-detection" target="_blank" rel="noopener" aria-label="Notebook for Sleep Apnea Detection">Notebook</a>
+            <a href="https://github.com/aritrasamui536/sleep-apnea-detection" target="_blank" rel="noopener" aria-label="Source code of Sleep Apnea Detection">Code</a>
+          </div>
+        </div>
+        <h3 class="project-title">Sleep Apnea Detection</h3>
+        <p class="project-desc">ML system that extracts HRV features from ECG signals (R-peak detection, RR intervals) and compares Random Forest, SVM, XGBoost, LightGBM &amp; CatBoost using ROC-AUC.</p>
+        <div class="project-stack">
+          <span>Scikit-learn</span><span>XGBoost</span><span>WFDB</span><span>NeuroKit2</span>
+        </div>
+      </article>
+ 
+      <article class="project-card" data-category="fullstack" data-url="https://github.com/aritrasamui536/AI-Powered-Study-Assistant" tabindex="0" role="link" aria-label="Open AI-Powered Study Assistant on GitHub">
+        <div class="project-card-top">
+          <span class="project-layer-tag">full stack</span>
+          <div class="project-links">
+            <a href="https://github.com/aritrasamui536/AI-Powered-Study-Assistant" target="_blank" rel="noopener" aria-label="Live demo of AI-Powered Study Assistant">Live</a>
+            <a href="https://github.com/aritrasamui536/AI-Powered-Study-Assistant" target="_blank" rel="noopener" aria-label="Source code of AI-Powered Study Assistant">Code</a>
+          </div>
+        </div>
+        <h3 class="project-title">StudyMind — AI Study Assistant</h3>
+        <p class="project-desc">AI-powered study tool with a chat tutor, auto-generated quizzes, 4-style summarizer, and flip-card flashcards, with an optional Node backend proxy.</p>
+        <div class="project-stack">
+          <span>React</span><span>Vite</span><span>Node.js</span><span>Claude API</span>
+        </div>
+      </article>
+ 
     </div>
-
+ 
     <p class="project-empty" id="projectEmpty" hidden>No projects in this layer yet — check back soon.</p>
   </div>
 </section>
