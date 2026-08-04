@@ -926,11 +926,11 @@ ul{ list-style: none; }
   .nav-actions{ gap: 16px; }
 
   .theme-toggle{
-    background: #ffffff;
+    background: var(--surface);
     border: 1.5px solid var(--accent);
   }
   [data-theme="light"] .theme-toggle{
-    background: var(--surface-2);
+    background: #ffffff;
     border: 1.5px solid var(--accent);
   }
 
