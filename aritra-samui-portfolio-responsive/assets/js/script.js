@@ -24,13 +24,23 @@ function initYear(){
   if (el) el.textContent = new Date().getFullYear();
 }
 
-/* ---------- nav background on scroll ---------- */
+/* ---------- nav background on scroll + hide while scrolling, show when stopped ---------- */
 function initNavScroll(){
   const nav = document.getElementById('nav');
   if (!nav) return;
+
+  let scrollTimer = null;
+
   const onScroll = () => {
     nav.classList.toggle('is-scrolled', window.scrollY > 12);
+    nav.classList.add('is-hidden');
+
+    clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(() => {
+      nav.classList.remove('is-hidden');
+    }, 250);
   };
+
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
 }
