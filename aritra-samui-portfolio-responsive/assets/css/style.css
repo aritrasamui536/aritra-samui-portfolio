@@ -903,27 +903,34 @@ ul{ list-style: none; }
     pointer-events: none;
   }
 
-  .nav-inner,
-  [data-theme="light"] .nav-inner{
-    background: rgba(16, 22, 29, .9) !important;
+  .nav-inner{
+    background: rgba(16, 22, 29, .9);
     backdrop-filter: blur(10px);
     border: 1px solid var(--border);
     border-radius: 40px;
     padding: 10px 14px;
     grid-template-columns: 1fr auto;
   }
-  .nav.is-scrolled{
-    background: rgba(16, 22, 29, .95) !important;
-    border-color: var(--border);
+  [data-theme="light"] .nav-inner{
+    background: rgba(255, 255, 255, .85);
+  }
+  .nav.is-scrolled .nav-inner{
+    background: rgba(16, 22, 29, .95);
+  }
+  [data-theme="light"] .nav.is-scrolled .nav-inner{
+    background: rgba(255, 255, 255, .95);
   }
 
   .nav-contact{ display: none; }
   .nav-logo-text{ display: none; }
   .nav-actions{ gap: 16px; }
 
-  .theme-toggle,
-  [data-theme="light"] .theme-toggle{
+  .theme-toggle{
     background: #ffffff;
+    border: 1.5px solid var(--accent);
+  }
+  [data-theme="light"] .theme-toggle{
+    background: var(--surface-2);
     border: 1.5px solid var(--accent);
   }
 
