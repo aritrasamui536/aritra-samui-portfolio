@@ -892,9 +892,15 @@ ul{ list-style: none; }
 /* ----- floating pill nav (mobile) ----- */
 @media (max-width: 760px){
   .nav{
-    transform: none !important;
-    opacity: 1 !important;
-    visibility: visible !important;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    transition: opacity .3s ease, transform .3s ease;
+  }
+  .nav.is-hidden{
+    opacity: 0;
+    transform: translateY(-12px);
+    pointer-events: none;
   }
   .nav-inner{
     background: rgba(16, 22, 29, .85);
@@ -919,12 +925,5 @@ ul{ list-style: none; }
     right: 12px;
     border-radius: 20px;
     border: 1px solid var(--border);
-     .nav{
-  transition: opacity .3s ease, transform .3s ease;
-}
-.nav.is-hidden{
-  opacity: 0;
-  transform: translateY(-12px);
-  pointer-events: none;
   }
 }
