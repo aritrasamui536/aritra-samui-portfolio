@@ -902,8 +902,10 @@ ul{ list-style: none; }
     transform: translateY(-12px);
     pointer-events: none;
   }
-  .nav-inner{
-    background: rgba(16, 22, 29, .85);
+
+  .nav-inner,
+  [data-theme="light"] .nav-inner{
+    background: rgba(16, 22, 29, .9) !important;
     backdrop-filter: blur(10px);
     border: 1px solid var(--border);
     border-radius: 40px;
@@ -911,13 +913,19 @@ ul{ list-style: none; }
     grid-template-columns: 1fr auto;
   }
   .nav.is-scrolled{
-    background: rgba(16, 22, 29, .9);
+    background: rgba(16, 22, 29, .95) !important;
     border-color: var(--border);
   }
 
   .nav-contact{ display: none; }
   .nav-logo-text{ display: none; }
   .nav-actions{ gap: 16px; }
+
+  .theme-toggle,
+  [data-theme="light"] .theme-toggle{
+    background: #ffffff;
+    border: 1.5px solid var(--accent);
+  }
 
   .nav-links{
     top: 80px;
