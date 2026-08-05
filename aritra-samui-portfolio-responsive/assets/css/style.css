@@ -997,6 +997,9 @@ ul{ list-style: none; }
   [data-theme="light"] .nav.is-scrolled{
     background: rgba(255, 255, 255, .9);
   }
+   [data-theme="light"] .nav-links{
+  background: rgba(246, 247, 249, .98);
+}
 
   .nav-contact{ display: none; }
   .nav-logo-text{ display: none; }
