@@ -892,13 +892,8 @@ ul{ list-style: none; }
     transform: none !important;
     opacity: 1 !important;
     visibility: visible !important;
-    background: transparent !important;
-    border-bottom-color: transparent !important;
   }
-  .nav.is-scrolled{
-    background: transparent;
-    border-color: transparent;
-  }
+
   .nav-inner{
     background: rgba(16, 22, 29, .85);
     backdrop-filter: blur(10px);
@@ -907,10 +902,12 @@ ul{ list-style: none; }
     padding: 10px 14px;
     grid-template-columns: 1fr auto;
   }
-  .nav.is-scrolled .nav-inner{
-    background: rgba(16, 22, 29, .95);
+
+  .nav.is-scrolled{
+    background: rgba(16, 22, 29, .9);
     border-color: var(--border);
   }
+
   .nav-contact{ display: none; }
   .nav-logo-text{ display: none; }
   .nav-actions{ gap: 16px; }
@@ -921,5 +918,17 @@ ul{ list-style: none; }
     right: 12px;
     border-radius: 20px;
     border: 1px solid var(--border);
+    background: rgba(16, 22, 29, .95);   /* এই line টা add করো, নাহলে blur এর নিচে content transparent দেখাবে */
+    backdrop-filter: blur(14px);
+  }
+
+  .nav{
+    transition: opacity .3s ease, transform .3s ease;
+  }
+
+  .nav.is-hidden{
+    opacity: 0;
+    transform: translateY(-12px);
+    pointer-events: none;
   }
 }
